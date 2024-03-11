@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roli\\source\\repos\\FractalTheory\\FractalTheory.csproj": {}
+    "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\FractalTheory.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roli\\source\\repos\\FractalTheory\\FractalTheory.csproj": {
+    "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\FractalTheory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roli\\source\\repos\\FractalTheory\\FractalTheory.csproj",
+        "projectUniqueName": "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\FractalTheory.csproj",
         "projectName": "FractalTheory",
-        "projectPath": "C:\\Users\\Roli\\source\\repos\\FractalTheory\\FractalTheory.csproj",
+        "projectPath": "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\FractalTheory.csproj",
         "packagesPath": "C:\\Users\\Roli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roli\\source\\repos\\FractalTheory\\obj\\",
+        "outputPath": "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Roli\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -152,6 +152,7 @@
             richTextBox1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox1.Location = new Point(1084, 325);
             richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
             richTextBox1.Size = new Size(134, 60);
             richTextBox1.TabIndex = 9;
             richTextBox1.Text = "1x";
@@ -162,6 +163,7 @@
             richTextBox2.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox2.Location = new Point(1084, 428);
             richTextBox2.Name = "richTextBox2";
+            richTextBox2.ReadOnly = true;
             richTextBox2.Size = new Size(274, 69);
             richTextBox2.TabIndex = 10;
             richTextBox2.Text = "X: 0\nY: 0";
@@ -172,6 +174,7 @@
             richTextBox3.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox3.Location = new Point(1084, 220);
             richTextBox3.Name = "richTextBox3";
+            richTextBox3.ReadOnly = true;
             richTextBox3.Size = new Size(134, 60);
             richTextBox3.TabIndex = 11;
             richTextBox3.Text = "0,0";
@@ -262,6 +265,7 @@
             richTextBox4.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox4.Location = new Point(1084, 107);
             richTextBox4.Name = "richTextBox4";
+            richTextBox4.ReadOnly = true;
             richTextBox4.Size = new Size(134, 60);
             richTextBox4.TabIndex = 16;
             richTextBox4.Text = "0,0";
