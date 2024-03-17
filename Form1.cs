@@ -9,7 +9,7 @@ namespace FractalTheory
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            new Main(pictureBox1);
+            new Main(pictureBox1, this);
             Main.get().Draw();
             richTextBox4.Text = Main.min.X + "," + Main.min.Y;
             richTextBox3.Text = Main.max.X + "," + Main.max.Y;
@@ -134,5 +134,60 @@ namespace FractalTheory
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e) { }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void updateGUI()
+        {
+            richTextBox8.Text = string.Join(" ", Main.get().system.variables);
+            richTextBox6.Text = Main.get().system.start;
+            richTextBox5.Text = Main.get().system.angle.ToString();
+            richTextBox10.Text = Main.get().system.iterations.ToString();
+            richTextBox9.Lines = Main.get().system.rules.Select(rule => rule.ToString()).ToArray();
+        }
+
+        private void richTextBox8_TextChanged(object sender, EventArgs e)// Variables
+        {
+            Main.get().system.variables = richTextBox8.Text.Split(' ').Select(s => s[0]).ToList();
+        }
+
+        private void richTextBox6_TextChanged(object sender, EventArgs e)// Start
+        {
+            Main.get().system.start = richTextBox6.Text;
+        }
+
+        private void richTextBox5_TextChanged(object sender, EventArgs e)// Angle
+        {
+            Main.get().system.angle = float.Parse(richTextBox5.Text);
+        }
+
+        private void richTextBox10_TextChanged(object sender, EventArgs e)// Iteration
+        {
+            Main.get().system.iterations = int.Parse(richTextBox10.Text);
+        }
+
+        private void button18_Click(object sender, EventArgs e)// Iteration +
+        {
+            richTextBox10.Text = $"{++Main.get().system.iterations}";
+        }
+
+        private void button17_Click(object sender, EventArgs e)// Iteartion -
+        {
+            richTextBox10.Text = $"{--Main.get().system.iterations}";
+        }
+
+        private void richTextBox9_TextChanged(object sender, EventArgs e)
+        {
+            List<LSystem.Rule> rules = new List<LSystem.Rule>();
+            foreach (string line in richTextBox9.Lines)
+            {
+                string[] split = line.Split(' ');
+                rules.Add(new(split[0][0], split[1]));
+            }
+            Main.get().system.rules = rules;
+        }
     }
 }
