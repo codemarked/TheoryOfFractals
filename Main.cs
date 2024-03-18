@@ -10,7 +10,6 @@ namespace FractalTheory
         {
             return INSTANCE;
         }
-        public Graphics graphics { get; }
 
         private PictureBox pictureBox;
         private Bitmap bitMap;
@@ -28,7 +27,6 @@ namespace FractalTheory
             INSTANCE = this;
             this.pictureBox = box;
             this.bitMap = new(box.Width, box.Height);
-            this.graphics = Graphics.FromImage(this.bitMap);
             this.pictureBox.BackColor = Color.White;
             this.system = new LSystem();
             this.system.Init();
@@ -40,7 +38,7 @@ namespace FractalTheory
             float x = bitMap.Width / 2;
             float y = bitMap.Height / 2;
             float angle = system.angle;
-            
+            Graphics g = Graphics.FromImage(this.bitMap);
             Stack<Tuple<PointF, float>> stack = new Stack<Tuple<PointF, float>>();
             foreach (char c in this.system.Iterate())
             {
@@ -50,7 +48,7 @@ namespace FractalTheory
                     case 'G':
                         float newX = x + (float)Math.Cos(angle * (float)Math.PI / 180);
                         float newY = y - (float)Math.Sin(angle * (float)Math.PI / 180);
-                        this.graphics.DrawLine(Pens.Black, x, y, newX, newY);
+                        g.DrawLine(Pens.Black, x, y, newX, newY);
                         x = newX;
                         y = newY;
                         break;
@@ -72,7 +70,7 @@ namespace FractalTheory
                 }
             }
             this.RefreshGraph();
-            pictureBox.Update();
+            g.Dispose();
         }
 
         public void DrawB()

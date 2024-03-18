@@ -151,43 +151,71 @@ namespace FractalTheory
 
         private void richTextBox8_TextChanged(object sender, EventArgs e)// Variables
         {
-            Main.get().system.variables = richTextBox8.Text.Split(' ').Select(s => s[0]).ToList();
+            try
+            {
+                Main.get().system.variables = richTextBox8.Text.Split(' ').Select(s => s[0]).ToList();
+            } catch { }
         }
 
         private void richTextBox6_TextChanged(object sender, EventArgs e)// Start
         {
-            Main.get().system.start = richTextBox6.Text;
+            try
+            {
+                Main.get().system.start = richTextBox6.Text;
+            } catch { }
         }
 
         private void richTextBox5_TextChanged(object sender, EventArgs e)// Angle
         {
-            Main.get().system.angle = float.Parse(richTextBox5.Text);
+            try
+            {
+                Main.get().system.angle = float.Parse(richTextBox5.Text);
+            } catch
+            {
+                Main.get().system.angle = 45f;
+            }
         }
 
         private void richTextBox10_TextChanged(object sender, EventArgs e)// Iteration
         {
-            Main.get().system.iterations = int.Parse(richTextBox10.Text);
+            try
+            {
+                Main.get().system.iterations = int.Parse(richTextBox10.Text);
+            }
+            catch { }
         }
 
         private void button18_Click(object sender, EventArgs e)// Iteration +
         {
-            richTextBox10.Text = $"{++Main.get().system.iterations}";
+            try
+            {
+                richTextBox10.Text = $"{++Main.get().system.iterations}";
+            }
+            catch { }
         }
 
         private void button17_Click(object sender, EventArgs e)// Iteartion -
         {
-            richTextBox10.Text = $"{--Main.get().system.iterations}";
+            try
+            {
+                richTextBox10.Text = $"{--Main.get().system.iterations}";
+            }
+            catch { }
         }
 
         private void richTextBox9_TextChanged(object sender, EventArgs e)
         {
-            List<LSystem.Rule> rules = new List<LSystem.Rule>();
-            foreach (string line in richTextBox9.Lines)
+            try
             {
-                string[] split = line.Split(' ');
-                rules.Add(new(split[0][0], split[1]));
+                List<LSystem.Rule> rules = new List<LSystem.Rule>();
+                foreach (string line in richTextBox9.Lines)
+                {
+                    string[] split = line.Split(' ');
+                    rules.Add(new(split[0][0], split[1]));
+                }
+                Main.get().system.rules = rules;
             }
-            Main.get().system.rules = rules;
+            catch { }
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\coding\\TheoryOfFractals\\FractalTheory.csproj": {}
+    "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\FractalTheory.csproj": {}
   },
   "projects": {
-    "C:\\coding\\TheoryOfFractals\\FractalTheory.csproj": {
+    "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\FractalTheory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\coding\\TheoryOfFractals\\FractalTheory.csproj",
+        "projectUniqueName": "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\FractalTheory.csproj",
         "projectName": "FractalTheory",
-        "projectPath": "C:\\coding\\TheoryOfFractals\\FractalTheory.csproj",
+        "projectPath": "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\FractalTheory.csproj",
         "packagesPath": "C:\\Users\\Roli\\.nuget\\packages\\",
-        "outputPath": "C:\\coding\\TheoryOfFractals\\obj\\",
+        "outputPath": "C:\\Users\\Roli\\Documents\\GitHub\\TheoryOfFractals\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Roli\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,7 +12,6 @@
 
         public void Init()
         {
-
             this.variables = new List<char> { 'F', 'G' };
             this.start = "F-G-G";
             this.rules = new List<Rule>() { new('F', "F−G+F+G−F"), new('G', "GG") };

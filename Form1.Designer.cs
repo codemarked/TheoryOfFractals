@@ -107,6 +107,7 @@
             button3.TabIndex = 3;
             button3.Text = "Up";
             button3.UseVisualStyleBackColor = true;
+            button3.Visible = false;
             button3.Click += button3_Click;
             // 
             // button4
@@ -117,6 +118,7 @@
             button4.TabIndex = 4;
             button4.Text = "Down";
             button4.UseVisualStyleBackColor = true;
+            button4.Visible = false;
             button4.Click += button4_Click;
             // 
             // button5
@@ -127,6 +129,7 @@
             button5.TabIndex = 5;
             button5.Text = "Right";
             button5.UseVisualStyleBackColor = true;
+            button5.Visible = false;
             button5.Click += button5_Click;
             // 
             // button6
@@ -137,6 +140,7 @@
             button6.TabIndex = 6;
             button6.Text = "Left";
             button6.UseVisualStyleBackColor = true;
+            button6.Visible = false;
             button6.Click += button6_Click;
             // 
             // richTextBox1
@@ -148,6 +152,7 @@
             richTextBox1.Size = new Size(134, 39);
             richTextBox1.TabIndex = 9;
             richTextBox1.Text = "1x";
+            richTextBox1.Visible = false;
             richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // richTextBox2
@@ -159,6 +164,7 @@
             richTextBox2.Size = new Size(274, 69);
             richTextBox2.TabIndex = 10;
             richTextBox2.Text = "X: 0\nY: 0";
+            richTextBox2.Visible = false;
             richTextBox2.TextChanged += richTextBox2_TextChanged;
             // 
             // richTextBox3
@@ -170,6 +176,7 @@
             richTextBox3.Size = new Size(76, 40);
             richTextBox3.TabIndex = 11;
             richTextBox3.Text = "0,0";
+            richTextBox3.Visible = false;
             richTextBox3.TextChanged += richTextBox3_TextChanged;
             // 
             // richTextBox4
@@ -181,6 +188,7 @@
             richTextBox4.Size = new Size(76, 39);
             richTextBox4.TabIndex = 16;
             richTextBox4.Text = "0,0";
+            richTextBox4.Visible = false;
             richTextBox4.TextChanged += richTextBox4_TextChanged;
             // 
             // label1
@@ -192,6 +200,7 @@
             label1.Size = new Size(46, 28);
             label1.TabIndex = 21;
             label1.Text = "Min";
+            label1.Visible = false;
             // 
             // label2
             // 
@@ -202,6 +211,7 @@
             label2.Size = new Size(49, 28);
             label2.TabIndex = 22;
             label2.Text = "Max";
+            label2.Visible = false;
             // 
             // label3
             // 
@@ -212,6 +222,7 @@
             label3.Size = new Size(64, 28);
             label3.TabIndex = 23;
             label3.Text = "Zoom";
+            label3.Visible = false;
             // 
             // label4
             // 
@@ -222,6 +233,7 @@
             label4.Size = new Size(64, 28);
             label4.TabIndex = 24;
             label4.Text = "Offset";
+            label4.Visible = false;
             // 
             // button8
             // 
@@ -231,6 +243,7 @@
             button8.TabIndex = 8;
             button8.Text = "Zoom-";
             button8.UseVisualStyleBackColor = true;
+            button8.Visible = false;
             button8.Click += button8_Click;
             // 
             // button7
@@ -241,6 +254,7 @@
             button7.TabIndex = 7;
             button7.Text = "Zoom+";
             button7.UseVisualStyleBackColor = true;
+            button7.Visible = false;
             button7.Click += button7_Click;
             // 
             // button12
@@ -251,6 +265,7 @@
             button12.TabIndex = 14;
             button12.Text = "Y+";
             button12.UseVisualStyleBackColor = true;
+            button12.Visible = false;
             button12.Click += button12_Click;
             // 
             // button11
@@ -261,6 +276,7 @@
             button11.TabIndex = 15;
             button11.Text = "Y-";
             button11.UseVisualStyleBackColor = true;
+            button11.Visible = false;
             button11.Click += button11_Click;
             // 
             // button10
@@ -271,6 +287,7 @@
             button10.TabIndex = 13;
             button10.Text = "X-";
             button10.UseVisualStyleBackColor = true;
+            button10.Visible = false;
             button10.Click += button10_Click;
             // 
             // button9
@@ -281,6 +298,7 @@
             button9.TabIndex = 12;
             button9.Text = "X+";
             button9.UseVisualStyleBackColor = true;
+            button9.Visible = false;
             button9.Click += button9_Click;
             // 
             // button14
@@ -291,6 +309,7 @@
             button14.TabIndex = 19;
             button14.Text = "Y+";
             button14.UseVisualStyleBackColor = true;
+            button14.Visible = false;
             button14.Click += button14_Click;
             // 
             // button13
@@ -301,6 +320,7 @@
             button13.TabIndex = 20;
             button13.Text = "Y-";
             button13.UseVisualStyleBackColor = true;
+            button13.Visible = false;
             button13.Click += button13_Click;
             // 
             // button15
@@ -311,6 +331,7 @@
             button15.TabIndex = 18;
             button15.Text = "X-";
             button15.UseVisualStyleBackColor = true;
+            button15.Visible = false;
             button15.Click += button15_Click;
             // 
             // button16
@@ -321,6 +342,7 @@
             button16.TabIndex = 17;
             button16.Text = "X+";
             button16.UseVisualStyleBackColor = true;
+            button16.Visible = false;
             button16.Click += button16_Click;
             // 
             // richTextBox5
@@ -328,7 +350,6 @@
             richTextBox5.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox5.Location = new Point(1231, 541);
             richTextBox5.Name = "richTextBox5";
-            richTextBox5.ReadOnly = true;
             richTextBox5.Size = new Size(134, 39);
             richTextBox5.TabIndex = 25;
             richTextBox5.Text = "";
@@ -339,7 +360,6 @@
             richTextBox6.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox6.Location = new Point(1084, 541);
             richTextBox6.Name = "richTextBox6";
-            richTextBox6.ReadOnly = true;
             richTextBox6.Size = new Size(134, 39);
             richTextBox6.TabIndex = 26;
             richTextBox6.Text = "";
@@ -350,7 +370,6 @@
             richTextBox8.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox8.Location = new Point(1084, 461);
             richTextBox8.Name = "richTextBox8";
-            richTextBox8.ReadOnly = true;
             richTextBox8.Size = new Size(134, 39);
             richTextBox8.TabIndex = 28;
             richTextBox8.Text = "";
@@ -392,7 +411,6 @@
             richTextBox9.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox9.Location = new Point(1084, 614);
             richTextBox9.Name = "richTextBox9";
-            richTextBox9.ReadOnly = true;
             richTextBox9.Size = new Size(274, 69);
             richTextBox9.TabIndex = 33;
             richTextBox9.Text = "";
